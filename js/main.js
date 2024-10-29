@@ -24,10 +24,11 @@ window
         if (newColorScheme === 'dark') {
             btnDarkMode.classList.add('dark-mode-btn--active')
             document.body.classList.add('dark')
-            localStorage.setItem('darkMode', 'dark')
+            localStorage.setItem('darkMode', 'dark');  // Обновление localStorage
         } else {
             btnDarkMode.classList.remove('dark-mode-btn--active')
             document.body.classList.remove('dark')
+            localStorage.setItem('darkMode', 'light');  // Обновление localStorage
         }
     })
 
